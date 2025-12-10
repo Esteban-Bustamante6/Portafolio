@@ -1,0 +1,215 @@
+body {
+    
+    margin: 0; 
+    padding: 0;
+}
+
+img:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+}
+
+
+#catalogo article{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 6%;
+    background-color: #ada8a8; /* Color de fondo de la barra */
+    margin: 20px 0;        
+    height: 170px;
+    width: 980px;
+    box-shadow: 0px 0px 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+article:hover{
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+}
+.stuar{
+    width: 150px;
+    height: 150px;
+    border-radius: 22%;
+    padding: 10px;
+    margin: 0px;
+    box-shadow: 0px 0px 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+.pets1{
+    display: flex;
+    flex-direction: column;
+    padding: 30PX;
+    margin: 10PX;
+    align-content: space-around;
+    align-items: center;
+
+}
+.cachorro{
+    width: 150px;
+    height: 150px;
+    border-radius: 22%;
+    padding: 10px;
+    box-shadow: 0px 0px 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+.pets2{
+    display: flex;
+    flex-direction: column;
+    padding: 30PX;
+    margin: 10PX;
+    align-content: space-around;
+    align-items: center;
+}
+.kingkong{
+    width: 150px;
+    height: 150px;
+    border-radius: 22%;
+    padding: 10px;
+    box-shadow: 0px 0px 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+.pest3{
+    display: flex;
+    flex-direction: column;
+    padding: 30PX;
+    margin: 10PX;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer {
+    background: rgba(56, 54, 54, 0.953);
+    color: #fff;
+    padding: 30px 20px 10px 20px;
+    border-top: 2px solid rgb(150, 149, 145);
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    text-align: center;
+}
+
+.footer-section h3 {
+    color: rgb(154, 153, 149);
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: rgb(102, 102, 100);
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    background: #25D366;
+    color: #fff !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.whatsapp-btn img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.whatsapp-btn:hover {
+    background: #20b954;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px solid rgb(162, 162, 158);
+    padding-top: 10px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+
+#slider{
+    display: flex;
+    padding: 20px;
+    height: 700px;
+    width: 800px;
+    -ms-flex-align: end;
+}
+#slider img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+#slider img:hover{
+    cursor: crosshair;
+    width: 400px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+/* =========================================
+6. RESPONSIVE MEDIA QUERIES*/
+
+
+    /* <!-- No es responsy por mala practica , posicion flex y era display flex --> */
+
+
+@media (max-width: 768px) {
+    
+    /* El layout principal (Catálogo y Slider) se apila */
+    main {
+        flex-direction: column;
+    }
+
+    /* Las tarjetas del catálogo se apilan verticalmente */
+    #catalogo article {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        width: 95%;
+        height: auto;
+    }
+    
+    /* El slider se reduce */
+    #slider {
+        height: 300px;
+        padding: 10px;
+    }
+    /* La imagen pasa a ocupar el 100% de su contenedor para no desbordarse */
+    #slider img:hover{
+        width: 100%; 
+    }
+    
+    /* Footer se apila */
+    .footer-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
