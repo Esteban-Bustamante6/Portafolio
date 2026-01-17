@@ -64,7 +64,7 @@
 
             </div>
         </header>
-        <section style="display: flex;">
+        <section style="display: flex; height: 550px;">
             
             <div id="Photo"> <img src="img/Captura.PNG" alt="Foto Personal" class="Photo">
                 <h1 id="presentation">My presentation</h1>
@@ -75,6 +75,45 @@
                 <div id="Botoness">
                     <a href="https://github.com/Esteban-Bustamante6 " target="_blank" class="btn-visualizador">Git Hub </a>
                     <button type="button" class="curriculum"><a href="img/Curriculum EBL .pdf" download="Mi_Curriculum_Esteban.pdf" style="text-decoration: none;">Download curriculum</a></button>
+
+                    <button type="button" class="btn-eye" onclick="interactuarTexto()">👁️</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE PROYECTOS AÑADIDA -->
+        <section class="projects-section">
+            <h2 style="color: antiquewhite; font-family: sans-serif; font-size: 2em; margin-bottom: 10px;">Mis Proyectos</h2>
+            <div class="projects-container">
+                <!-- Carta Proyecto 1 -->
+                <div class="project-card">
+                    <a href="https://github.com/TaskFlowJS/TaskFlow_JS" target="_blank" style="text-decoration: none; color: black;">
+                    <h3>Taskflow</h3>
+                    <p>Aplicación web de gestion de tareas colaborativo , creacion y asignamiento de tareas por grupos tecnicos Riwi.</p>
+                    <span class="project-tag">Html /Css / Js</span></a>
+                </div>
+
+                <!-- Carta Proyecto 2 -->
+                <div class="project-card">
+                    <a href="https://drive.google.com/drive/folders/18dLfmlErzISF8glZZ2EnHDl_kc5q2tdl?usp=drive_link" target="_blank" style="text-decoration: none; color: black;">
+                    <h3>Deteccion de objetos</h3>
+                    <p>Sistema de gestión y reconocimientos de objetos atravez de videocamara ,extracion caracteres - color - edicion de fps ---(Enlace a mi repertorio en drive) </p>
+                    <span class="project-tag">Python / OpenCv (LR) / pytesseract (LR)</span></a>
+                </div>
+
+                <!-- Carta Proyecto 3 -->
+                <div class="project-card">
+                    <a href="https://github.com/VideoJuegoAfrodita" target="_blank" style="text-decoration: none; color: black;">
+                    <h3>Video Juego Afrodita</h3>
+                    <p>Plataforma de entretenimiento web, con dinamica tipo puzles "match-3" donde el objetivo es intercambiar caramelos adyacentes con tematica de diosa griega Riwi .</p>
+                    <span class="project-tag">HTML / CSS / JS</span></a>
+                </div>
+
+                <div class="project-card">
+                    <a href="https://drive.google.com/file/d/1sDGk6cl1MJjtk2yxESj1cn8k_k-w0zD6/view?usp=drive_link" target="_blank" style="text-decoration: none; color: black;">
+                    <h3>San jeronimo web</h3>
+                    <p>Portal web hacia el municipio san jeronimo de antioquia , proyecto integral del sena donde abarca todo el comercio del municipio haciendolo visible hacia los turistas.</p>
+                    <span class="project-tag">HTML / CSS </span></a>
                 </div>
             </div>
         </section>
@@ -111,5 +150,6 @@
         </footer>
     </main>
 
+    <script src="app.js"></script>
 </body>
 </html>
